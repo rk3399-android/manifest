@@ -3,6 +3,105 @@
   <remote  name="github"
            fetch="https://github.com/rk3399-android/" />
 
+  <!--Updated Projects -->
+  <remove-project name="platform/bionic" />
+  <project path="bionic" name="bionic" remote="github" revision="android_8.1.0_r48" />
+
+  <remove-project name="platform/bootable/recovery" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="github" revision="android_8.1.0_r48" />
+
+  <remove-project name="platform/build" />
+  <project path="build/make" name="build_make" remote="github" revision="android_8.1.0_r48" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <remove-project name="platform/build/soong" />
+  <project path="build/soong" name="build_soong" remote="github" revision="android_8.1.0_r48" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <remove-project name="platform/external/avb" />
+  <project path="external/avb" name="external_avb" remote="github" revision="android_8.1.0_r48" />
+
+  <remove-project name="platform/external/libdrm" />
+  <project path="external/libdrm" name="external_libdrm" remote="github" revision="android_8.1.0_r48" />
+
+  <remove-project name="platform/external/libusb-compat" />
+  <project path="external/libusb-compat" name="external_libusb-compat" remote="github" revision="android_8.1.0_r48" />
+
+  <remove-project name="platform/external/ppp" />
+  <project path="external/ppp" name="external_ppp" remote="github" revision="android_8.1.0_r48" />
+
+  <remove-project name="platform/external/skia" />
+  <project path="external/skia" name="external_skia" remote="github" revision="android_8.1.0_r48" />
+
+  <remove-project name="platform/external/tinyalsa" />
+  <project path="external/tinyalsa" name="external_tinyalsa" remote="github" revision="android_8.1.0_r48" />
+
+  <remove-project name="platform/external/wpa_supplicant_8" />
+  <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="github" revision="android_8.1.0_r48" />
+
+  <remove-project name="platform/frameworks/av" />
+  <project path="frameworks/av" name="frameworks_av" remote="github" revision="android_8.1.0_r48" />
+
+  <remove-project name="platform/frameworks/base" />
+  <project path="frameworks/base" name="frameworks_base" remote="github" revision="android_8.1.0_r48" />
+
+  <remove-project name="platform/frameworks/ex" />
+  <project path="frameworks/ex" name="frameworks_ex" remote="github" revision="android_8.1.0_r48" />
+
+  <remove-project name="platform/frameworks/ml" />
+  <project path="frameworks/ml" name="frameworks_ml" remote="github" revision="android_8.1.0_r48" />
+
+  <remove-project name="platform/frameworks/native" />
+  <project path="frameworks/native" name="frameworks_native" remote="github" revision="android_8.1.0_r48" />
+
+  <remove-project name="platform/frameworks/opt/net/ethernet" />
+  <project path="frameworks/opt/net/ethernet" name="frameworks_opt_net_ethernet" remote="github" revision="android_8.1.0_r48" />
+
+  <remove-project name="platform/frameworks/opt/net/wifi" />
+  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="github" revision="android_8.1.0_r48" />
+
+  <remove-project name="platform/frameworks/opt/telephony" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="github" revision="android_8.1.0_r48" />
+
+  <remove-project name="platform/hardware/broadcom/libbt" />
+  <project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt" remote="github" revision="android_8.1.0_r48" />
+
+  <remove-project name="platform/hardware/broadcom/wlan" />
+  <project path="hardware/broadcom/wlan" name="hardware_broadcom_wlan" remote="github" revision="android_8.1.0_r48" />
+
+  <remove-project name="platform/hardware/interfaces" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="github" revision="android_8.1.0_r48" />
+
+  <remove-project name="platform/hardware/libhardware" />
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="github" revision="android_8.1.0_r48" />
+
+  <remove-project name="platform/hardware/ril" />
+  <project path="hardware/ril" name="hardware_ril" remote="github" revision="android_8.1.0_r48" />
+
+  <remove-project name="platform/packages/apps/Settings" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="github" revision="android_8.1.0_r48" />
+
+  <remove-project name="platform/system/bt" />
+  <project path="system/bt" name="system_bt" remote="github" revision="android_8.1.0_r48" />
+
+  <remove-project name="platform/system/sepolicy" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="github" revision="android_8.1.0_r48" />
+
+  <remove-project name="platform/system/vold" />
+  <project path="system/vold" name="system_vold" remote="github" revision="android_8.1.0_r48" />
+
+  <remove-project name="platform/system/core" />
+  <project path="system/core" name="system_core" remote="github" revision="android_8.1.0_r48" />
+
   <!--New Projects -->
   <project path="external/abc" name="external_abc" remote="github" revision="master" />
   <project path="external/io" name="external_io" remote="github" revision="master" />
@@ -12,17 +111,30 @@
   <project path="external/rk-pcba-test" name="external_rk-pcba-test" remote="github" revision="master" />
   <project path="external/rk_tee_user" name="external_rk_tee_user" remote="github" revision="master" />
   <project path="external/usb_modeswitch" name="external_usb_modeswitch" remote="github" revision="master" />
-  
+
   <project path="hardware/realtek" name="hardware_realtek" remote="github" revision="master" />
   <project path="hardware/rockchip" name="hardware_rockchip" remote="github" revision="master" />
-  
-  <project path="frameworks/opt/net/ppoe" name="frameworks_opt_net_ppoe" remote="github" revision="master" />
-  
-  <project path="device/rockchip/common" name="device_rockchip_common" remote="github" revision="master" />
-  <project path="device/rockchip/rk3399" name="device_rockchip_rk3399" remote="github" revision="master" />
-  
+
+  <project path="frameworks/opt/net/pppoe" name="frameworks_opt_net_pppoe" remote="github" revision="master" />
+
+  <project path="device/rockchip/common" name="device_rockchip_common" remote="github" revision="master" >
+    <linkfile src="mkimage.sh" dest="mkimage.sh" />
+    <linkfile src="buildspec-rk3399.mk" dest="buildspec.mk" />
+  </project>
+  <project path="device/rockchip/rk3399" name="device_rockchip_rk3399" remote="github" revision="master" >
+    <linkfile src="build-nanopc-t4.sh" dest="build-nanopc-t4.sh" />
+  </project>
+
   <project path="vendor/friendlyelec" name="vendor_friendlyelec" remote="github" revision="master" />
   <project path="vendor/rockchip" name="vendor_rockchip" remote="github" revision="master" />
+
+  <project path="kernel" name="kernel" remote="github" revision="master" />
+  <project path="u-boot" name="u-boot" remote="github" revision="master" />
+  <project path="rkbin" name="rkbin" remote="github" revision="master" />
+  <project path="RKDocs" name="RKDocs" remote="github" revision="master" />
+  <project path="RKTools" name="RKTools" remote="github" revision="master" />
+  <project path="rkst" name="rkst" remote="github" revision="master" />
+
 
 
 </manifest>
