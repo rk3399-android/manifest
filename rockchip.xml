@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="github"
+           fetch="https://github.com/rk3399-android/" />
+
+  <!--New Projects -->
+  <project path="external/abc" name="external_abc" remote="github" revision="master" />
+  <project path="external/io" name="external_io" remote="github" revision="master" />
+  <project path="external/iperf" name="external_iperf" remote="github" revision="master" />
+  <project path="external/libvorbis" name="external_libvorbis" remote="github" revision="master" />
+  <project path="external/ntfs-3g" name="external_ntfs-3g" remote="github" revision="master" />
+  <project path="external/rk-pcba-test" name="external_rk-pcba-test" remote="github" revision="master" />
+  <project path="external/rk_tee_user" name="external_rk_tee_user" remote="github" revision="master" />
+  <project path="external/usb_modeswitch" name="external_usb_modeswitch" remote="github" revision="master" />
+  
+  <project path="hardware/realtek" name="hardware_realtek" remote="github" revision="master" />
+  <project path="hardware/rockchip" name="hardware_rockchip" remote="github" revision="master" />
+  
+  <project path="frameworks/opt/net/ppoe" name="frameworks_opt_net_ppoe" remote="github" revision="master" />
+  
+  <project path="device/rockchip/common" name="device_rockchip_common" remote="github" revision="master" />
+  <project path="device/rockchip/rk3399" name="device_rockchip_rk3399" remote="github" revision="master" />
+  
+  <project path="vendor/friendlyelec" name="vendor_friendlyelec" remote="github" revision="master" />
+  <project path="vendor/rockchip" name="vendor_rockchip" remote="github" revision="master" />
+
+
+</manifest>
