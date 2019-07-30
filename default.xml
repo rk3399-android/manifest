@@ -2,4 +2,5 @@
 <manifest>
 	<include name="android.xml" />
 	<include name="rockchip.xml" />
+	<include name="stage2019.xml" />
 </manifest>
