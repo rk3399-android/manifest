@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="github"
+           fetch="https://github.com/rk3399-android/" />
+           
+  <remove-project name="platform/hardware/interfaces" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="github" revision="stage-2019" />
+  
+  <remove-project name="platform/packages/apps/Car/Hvac" />
+  <project path="packages/apps/Car/Hvac" name="packages_apps_Car_Hvac" remote="github" revision="stage-2019" />
+
+  <remove-project name="platform/packages/services/Car" />
+  <project path="packages/services/Car" name="packages_services_Car" remote="github" revision="stage-2019" />
+  
+  <project path="vendor/smile/autohost" name="vendor_smile_autohost" remote="github" revision="stage-2019" />
+  <project path="vendor/smile/SensorsApp" name="vendor_smile_SensorsApp" remote="github" revision="stage-2019" />
+
+</manifest>
