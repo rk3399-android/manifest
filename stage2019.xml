@@ -3,7 +3,7 @@
   <remote  name="github"
            fetch="https://github.com/rk3399-android/" />
            
-  <remove-project name="platform/hardware/interfaces" />
+  <remove-project name="hardware_interfaces" />
   <project path="hardware/interfaces" name="hardware_interfaces" remote="github" revision="stage-2019" />
   
   <remove-project name="platform/packages/apps/Car/Hvac" />
