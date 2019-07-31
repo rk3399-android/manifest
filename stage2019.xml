@@ -6,6 +6,11 @@
   <remove-project name="hardware_interfaces" />
   <project path="hardware/interfaces" name="hardware_interfaces" remote="github" revision="stage-2019" />
   
+  <remove-project name="device_rockchip_rk3399" />
+  <project path="device/rockchip/rk3399" name="device_rockchip_rk3399" remote="github" revision="stage-2019" >
+    <linkfile src="build-nanopc-t4.sh" dest="build-nanopc-t4.sh" />
+  </project>
+  
   <remove-project name="platform/packages/apps/Car/Hvac" />
   <project path="packages/apps/Car/Hvac" name="packages_apps_Car_Hvac" remote="github" revision="stage-2019" />
 
