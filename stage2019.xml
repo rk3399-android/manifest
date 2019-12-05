@@ -19,5 +19,6 @@
   
   <project path="vendor/smile/autohost" name="vendor_smile_autohost" remote="github" revision="stage-2019" />
   <project path="vendor/smile/SensorsApp" name="vendor_smile_SensorsApp" remote="github" revision="stage-2019" />
+  <project path="vendor/smile/gps" name="vendor_smile_gps" remote="github" revision="stage-2019" />
 
 </manifest>
